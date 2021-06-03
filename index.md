@@ -9,7 +9,11 @@ Goals and Outcomes
   -  Gain experience working with Visual Studio Code (VSCode)
   -  Gain experience writing and executing non-web server Node.js JavaScript code
 
+```
+
 p1-date.js
+
+```rouge
 
   `/*
     CIT 281 Project 1
@@ -21,9 +25,12 @@ var num = d.getDay();
 var name = weekDays[num];
 console.log(name);`
 
+```
 
 p1-random.js
  
+```rouge
+
   `/*
     CIT 281 Project 1
     Name: Emily Deng
