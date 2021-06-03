@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+## Project 1
 
-You can use the [editor on GitHub](https://github.com/killua-boop/cit281-p1/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+Goals and Outcomes
 
-# Header 1
-## Header 2
-### Header 3
+  -  Gain experience accessing your operating system's command line interface (CLI)
+  -  Gain experience working with CLI commands
+  -  Gain experience working with Visual Studio Code (VSCode)
+  -  Gain experience writing and executing non-web server Node.js JavaScript code
 
-- Bulleted
-- List
+p1-date.js
 
-1. Numbered
-2. List
+  `/*
+    CIT 281 Project 1
+    Name: Emily Deng
+*/
+var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var d = new Date();
+var num = d.getDay();
+var name = weekDays[num];
+console.log(name);`
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+p1-random.js
+ 
+  `/*
+    CIT 281 Project 1
+    Name: Emily Deng
+*/
+
+// Returns a random number between min (inclusive) and max (exclusive)
+function getRandomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+//Output to the console a string of random length between 5 - 25 characters (range inclusive) in length, that consists of all random lowercase letters from the English alphabet.
+function random(length){
+    var result = '';
+    var characters = 'abcdefghijklmnopqrstuvwxyz';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++){
+        var index = getRandomInteger(0,charactersLength);
+        result = result + characters[index];
+    }
+    return result;
+}
+console.log(random(getRandomInteger(5,26)));`
+
+
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/killua-boop/cit281-p1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
